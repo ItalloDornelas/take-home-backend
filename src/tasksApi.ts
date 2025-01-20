@@ -6,7 +6,7 @@ import {
   deleteTask,
 } from "./tasksRepository";
 
-const app = express();
+export const app = express();
 
 app.use(express.json());
 
@@ -54,5 +54,3 @@ app.delete("/tasks/:id", async (req, res) => {
       .json({ message: "Failed to delete task", error: error.message });
   }
 });
-
-app.listen(3000);
