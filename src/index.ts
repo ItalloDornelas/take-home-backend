@@ -4,7 +4,7 @@ import {
   getTasks,
   updateTask,
   deleteTask,
-} from "./src/tasksRepository";
+} from "./tasksRepository";
 
 const app = express();
 
