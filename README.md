@@ -77,7 +77,6 @@ http://localhost:3000
       "title": "Task title",
       "completed": false,
       "color": "#ff0000"
-      createdAt: new Date(),
     }
     ```
 - **Read All Tasks**: `GET /tasks`
@@ -89,7 +88,6 @@ http://localhost:3000
       "title": "Task title 1",
       "completed": true,
       "color": "#ff0000"
-      updatedAt: new Date(),
     }
     ```
 - **Delete Task**: `DELETE /tasks/:id`
