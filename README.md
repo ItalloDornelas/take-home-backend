@@ -98,10 +98,13 @@ project-folder/
 ├── prisma/          # Prisma schema and migrations
 ├── src/
 │   ├── tasksRepository.ts # Task repository implementation
-│   └── index.ts          # Main server file
+│   └── tasksApi.ts  # Task api implementation
+│   └── test/  
+│        └── tasksApi.test.ts # Task api test implementation
 ├── .env             # Environment variables
 ├── package.json     # Project dependencies and scripts
 └── tsconfig.json    # TypeScript configuration
+└── server.ts # Main server file
 ```
 
 ## Notes
