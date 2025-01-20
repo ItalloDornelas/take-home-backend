@@ -4,8 +4,6 @@ type Tasks = {
   title: string;
   completed: boolean;
   color: string;
-  createdAt?: Date;
-  updatedAt?: Date;
 };
 
 const prisma = new PrismaClient();
