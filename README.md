@@ -111,6 +111,12 @@ project-folder/
 - Ensure your MySQL database is running and accessible before starting the API.
 - Use tools like [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/) to test API endpoints.
 
+## CI/CD with Railway
+This project uses **Railway** for continuous integration and deployment of the backend.
+
+- The API is deployed at: `https://take-home-backend-production.up.railway.app`
+- Note: To access the tasks endpoint, append `/tasks/` to the URL. For example: `https://take-home-backend-production.up.railway.app/tasks/`
+
 ## License
 This project is licensed under the MIT License. Feel free to use and modify it as needed.
 
