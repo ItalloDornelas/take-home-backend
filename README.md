@@ -10,7 +10,7 @@ This project implements a basic CRUD (Create, Read, Update, Delete) API for mana
 ## Prerequisites
 Before running this project, ensure you have the following installed on your machine:
 
-- Node.js (v14 or higher)
+- Node.js (v18 or higher)
 - npm (Node Package Manager) or Yarn
 - MySQL (configured and running)
 
