@@ -2,6 +2,7 @@ import express from "express";
 import {
   createTask,
   getTasks,
+  getTask,
   updateTask,
   deleteTask,
 } from "./tasksRepository";
@@ -13,6 +14,18 @@ app.use(express.json());
 app.get("/tasks", async (req, res) => {
   try {
     const tasks = await getTasks();
+    res.status(200).json(tasks);
+  } catch (error) {
+    console.error("Error fetching tasks:", error);
+    res
+      .status(500)
+      .json({ message: "Failed to fetch tasks", error: error.message });
+  }
+});
+
+app.get("/tasks/:id", async (req, res) => {
+  try {
+    const tasks = await getTask(req.params.id);
     res.status(200).json(tasks);
   } catch (error) {
     console.error("Error fetching tasks:", error);
