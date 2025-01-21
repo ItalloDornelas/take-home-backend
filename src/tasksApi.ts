@@ -25,13 +25,14 @@ app.get("/tasks", async (req, res) => {
 
 app.get("/tasks/:id", async (req, res) => {
   try {
-    const tasks = await getTask(req.params.id);
-    res.status(200).json(tasks);
+    const task = await getTask(req.params.id);
+    console.log(task, "TASK");
+    res.status(200).json(task);
   } catch (error) {
-    console.error("Error fetching tasks:", error);
+    console.error("Error fetching task:", error);
     res
       .status(500)
-      .json({ message: "Failed to fetch tasks", error: error.message });
+      .json({ message: "Failed to fetch task", error: error.message });
   }
 });
 
