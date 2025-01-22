@@ -65,7 +65,7 @@ The API will be available at `http://localhost:3001`.
 
 ### Base URL
 ```
-http://localhost:3000
+https://take-home-backend-production.up.railway.app
 ```
 
 ### Endpoints
